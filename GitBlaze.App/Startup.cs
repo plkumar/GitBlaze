@@ -6,7 +6,6 @@ namespace GitBlaze.App
 {
     public class Startup
     {
-        //88670637d923dff9a6c506401d2b6f49d490aeea
 
         public void ConfigureServices(IServiceCollection services)
         {
