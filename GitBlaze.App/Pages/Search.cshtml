@@ -7,8 +7,16 @@
 
 <input class="form-control" onchange="@searchOnChange" bind="@searchString">Click me</input>
 
+<p>@path</p>
+
 @functions {
+    
     string searchString = string.Empty;
+    string path = string.Empty;
+
+    protected override void OnInit(){
+        //path = hostingEnv.env.
+    }
 
     void searchOnChange(UIChangeEventArgs args)
     {
