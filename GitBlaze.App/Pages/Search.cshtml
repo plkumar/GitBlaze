@@ -1,0 +1,16 @@
+﻿@page "/search"
+
+<h1>Search</h1>
+
+<p >@searchString</p>
+
+<input class="form-control" onchange="@searchOnChange" bind="@searchString">Click me</input>
+
+@functions {
+    string searchString = string.Empty;
+
+    void searchOnChange(UIChangeEventArgs args)
+    {
+        //searchString = args.Value.ToString();
+    }
+}
