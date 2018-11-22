@@ -1,8 +1,9 @@
 ﻿@page "/search"
+@inject Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnv
 
 <h1>Search</h1>
 
-<p >@searchString</p>
+<p>@searchString</p>
 
 <input class="form-control" onchange="@searchOnChange" bind="@searchString">Click me</input>
 
